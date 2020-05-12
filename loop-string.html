@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetir String</title>
+</head>
+<body>
+<H1>Repetir String</H1>
+<script type="text/javascript">
+/*Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3)
+devolverá Hola Mundo Hola Mundo Hola Mundo.*/
+let texto = "Repetir cadena"
+console.log(`La cadena ingresada es ${texto}`)
+
+let reps = 10;
+console.log(`El numero de repeticiones es ${reps}`)
+
+function repetirCadena(texto, reps) {
+    for (a = 1; a <= reps; a++) {
+        console.log(`${texto} ${a}`)
+    };
+}
+
+repetirCadena(texto, reps);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recortar String</title>
+</head>
+<body>
+<h1>Recortar String</h1>
+<script type="text/javascript">
+/*Programa una función que te devuelva el texto recortado según el número de
+caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".*/
+let texto = "Andres Rubiano";
+console.log(`El texto ingresado es ${texto}`);
+const numRecorte = 4;
+console.log(`El numero a recortar es de ${numRecorte} caracteres`);
+
+let textoArreglo = texto.split('');
+
+let textoCortado = textoArreglo.slice(0, numRecorte);
+
+let resultado = textoCortado.join('');
+console.log(`El resulado es: ${resultado}`);
+
+</script>
+</body>
+</html>
