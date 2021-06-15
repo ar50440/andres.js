@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invert String</title>
+</head>
+<body>
+<h1>Invert String</h1>
+<script type="text/javascript">
+/*Programa una función que invierta las palabras de una cadena de texto,
+pe. miFuncion("Hola Mundo") devolverá "odnuM aloH"*/
+
+function invertirCadena (cadena="") {
+let longitud = cadena.length;
+let cadenaInvertida ="";
+
+if (!cadena) {
+ console.warn("La cadena no puede estar vacía")
+ }
+ else {
+ for (let a=1; a<=longitud; a++) {
+    cadenaInvertida = cadenaInvertida+cadena.charAt(cadena.length-a);
+ }
+ console.info(cadenaInvertida);
+ };
+}
+
+invertirCadena("Esta cadena se va a invertir");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecha</title>
+</head>
+<body>
+<h1>Fecha</h1>
+/*Programa una función que dada una fecha válida determine cuantos años
+han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23))
+devolverá 35 años (en 2020)*/
+<script type="text/javascript">
+
+function fecha (fecha) {
+console.log(fecha);
+let añoAnte = fecha.getFullYear();
+let añoActual =new Date().getFullYear();
+console.log("Han pasado %s años", añoActual-añoAnte);
+}
+
+fecha(new Date(1988,3,4));
+
+</script>
+</body>
+</html>

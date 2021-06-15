@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeat String</title>
+</head>
+<body>
+<h1>Repeat String</h1>
+<script type="text/javascript">
+/*Programa una función para contar el número de veces que se repite una palabra
+en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2.*/
+
+function repetirString (cadena="", palabra="") {
+cadena = cadena.toLowerCase();
+palabra = palabra.toLocaleLowerCase();
+
+if (!cadena) {
+    console.warn("Por favor ingrese una cadena válida")
+} else if (!palabra) {
+    console.warn("Por favor ingrese una palabra para buscar")
+} else {
+    cont = 0;
+    let posicion = cadena.indexOf(palabra);
+
+    for (posicion; posicion > 0; posicion++) {
+        cont++;
+        posicion = cadena.indexOf(palabra,posicion+1);
+    }
+    console.log(`La palabra ${palabra} se repite ${cont} veces en la cadena ingresada`);
+    //console.log(re.length);
+}
+
+}
+
+repetirString("Hola soy el mar y del mar vender mar me mar llamo mar Mariano", "ar");
+
+
+</script>
+</body>
+</html>

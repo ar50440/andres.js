@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binario a Decimal</title>
+</head>
+<body>
+<h1>Binario a Decimal</h1>
+/*Programa una función para convertir números de base binaria a
+decimal y viceversa, pe. miFuncion(100,2) devolverá 4 base 10*/
+<script type="text/javascript">
+
+
+function convertir (decimal, base) {
+let dectobin = decimal.toString(base);
+console.log("El numero %s en binario es %s", decimal, dectobin);
+let bintodec = parseInt(dectobin, 2);
+console.log("El numero %s en decimal es %s", dectobin, bintodec);
+}
+
+convertir(100, 2);
+
+</script>
+</body>
+</html>

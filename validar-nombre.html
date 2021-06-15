@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Nombre</title>
+</head>
+<body>
+<h1>Validar Nombre</h1>
+/*Programa una función que valide que un texto sea un nombre válido,
+pe. miFuncion("Jonathan MirCha") devolverá verdadero.*/
+
+<script type="text/javascript">
+
+function validateName (nombre) {
+var expreg = new RegExp("^[A-Z]{1}[a-z\ñ\á\é\í\ó\ú]{1,20}\\s[A-Z]{1}[a-z\ñ\á\é\í\ó\ú]{1,20}$");
+
+if (expreg.test(nombre)==true) {
+    console.log("El nombre es válido");
+} else {
+    console.log("Ingresa un nombre válido");
+}
+}
+
+validateName ("Andrés Rubiano");
+</script>
+</body>
+</html>

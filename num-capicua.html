@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Capicua</title>
+</head>
+<body>
+<h1>Número Capicúa</h1>
+/*Programa una función que reciba un número y evalúe si es capicúa
+o no (que se lee igual en un sentido que en otro),
+pe. miFuncion(2002) devolverá true*/
+
+<script type="text/javascript">
+
+function capicua (a) {
+let num1 = a.toString().split('').join('');
+let num2 = a.toString().split('').reverse().join('');
+if (!a) {
+    console.log("Ingresa un número");
+} else if (num1 == num2) {
+    console.log("El número " + a + " es capicúa");
+} else {
+    console.log("El número " + a + " es normal");
+}
+}   
+capicua(123321);
+
+</script>
+</body>
+</html>

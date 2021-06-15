@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocales & Consonantes</title>
+</head>
+<body>
+<h1>Vocales & Consonantes</h1>
+/*Programa una función que dada una cadena de texto cuente el número
+de vocales y consonantes, pe. miFuncion("Hola Mundo") devuelva
+Vocales: 4, Consonantes: 5.*/
+<script type="text/javascript">
+
+function contarvc(frase) {
+var var1 = frase.toLowerCase().split('');
+var cVocales=0;
+var cConsonantes = 0;
+var cEspacios = 0;
+console.log(var1);
+for (let i=0;i<var1.length;i++){
+    switch (var1[i]) {
+    case "a":
+    case "á":
+    cVocales++;
+    break;
+    case "e":
+    case "é":
+    cVocales++;
+    break;
+    case "i":
+    case "í":
+    cVocales++;
+    break;
+    case "o":
+    case "ó":
+    cVocales++;
+    break;
+    case "u":
+    case "ú":
+    cVocales++;
+    break;
+    case " ":
+    cEspacios++;
+    break;
+
+    default:
+    cConsonantes++;
+    break;
+    }
+}
+var consonantes = cConsonantes-cEspacios;
+console.log("La cadena tiene %s vocales, %s consonantes y %s espacios", cVocales, cConsonantes, cEspacios);
+}
+contarvc("Hola esta cadena es de ejemplo para encontrar la cantidad de vocales y consonantes");
+
+</script>
+</body>
+</html>

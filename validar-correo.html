@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Email</title>
+</head>
+<body>
+<h1>Validar Email</h1>
+/*Programa una función que valide que un texto sea un email válido,
+pe. miFuncion("jonmircha@gmail.com") devolverá verdadero*/
+<script type="text/javascript">
+
+function validateEmail (correo) {
+var expreg = /[a-zA-Z0-9-_]{5,30}[@][a-zA-Z0-9-_]{2,30}[.]\w{2,8}/gi;
+
+if (expreg.test(correo)==true) {
+    console.log("El correo es válido");
+} else {
+    console.log("Ingresa otro correo");
+}
+
+}
+
+validateEmail ("jonmircha@gmail.com")
+
+</script>
+</body>
+</html>

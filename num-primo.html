@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Primos</title>
+</head>
+<body>
+<h1>Numeros Primos</h1>
+/*Programa una función que determine si un número es primo
+(aquel que solo es divisible por sí mismo y 1) o no,
+pe. miFuncion(7) devolverá true*/
+<script type="text/javascript">
+
+function primos (num) {
+    for (let i=2;i<num;i++) {
+        if ((num%i==0)&&(num!=1)) {
+        return false
+        //console.log("El numero ingresado NO es primo")
+        }
+        //console.log(num/i);
+    }
+    return true
+}
+
+console.log(primos(23));
+
+</script>
+</body>
+</html>

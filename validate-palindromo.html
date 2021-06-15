@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Palindromo</title>
+</head>
+<body>
+<h1>Validate Palindromo</h1>
+<script type="text/javascript">
+/*Programa una función que valide si una palabra o frase dada, es un palíndromo
+(que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.*/
+
+let a = prompt("Ingresa la palabra aquí:")
+
+function encontrarPalindromo (cadena) {
+const cadena1 = cadena.toLowerCase().split('').join('');
+const cadena2 = cadena.toLowerCase().split('').reverse().join('');
+if (cadena === "") {
+    console.warn("Debes ingresar una cadena válida");
+} else if (cadena1 === cadena2) {
+    console.log("El texto es un palindromo");
+    } else {
+    console.log("El texto no es un palindromo");    
+}
+console.log(cadena1);
+console.log(cadena2);
+} 
+
+encontrarPalindromo(a);
+
+
+</script>
+</body>
+</html>
